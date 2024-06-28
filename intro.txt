@@ -1,0 +1,48 @@
+fun main() {
+    val num: Int = 100
+    println("Number is $num") // string template
+    println("Addition : $num+1") // 100 + 1
+    println("Operation: " + (num+1))
+    println ("Operation: ${num+1}")
+    
+    val  x = 5
+    val y = x.toLong()
+    println(y)
+    
+    val numn = 0
+    val result = if(numn < 0) "Negative!" else if(numn == 0) "zero" else "Positive"
+    println(result)
+    
+    val day = 6
+    val results = when(day)
+    {
+     	in 1..5 -> "Weekday"
+        6 -> "Saturaday"
+        7 -> "Sunday"
+        else -> "Invalid day"
+    }
+    println("Day: $results")
+    
+    val city = arrayOf("Yangon", "Mandalay", "Taung Gyi")
+    println("Number of elements: "+city.size)
+    if("Taung Gyi" in city) println("Array City") else println("Other city")
+    
+    val cities: ArrayList<String> = ArrayList() // ArrayList ka add lo ya | ArrayOf ka add lo ma ya
+    cities.add("Yangon")
+    cities.add("Mandalay")
+    
+    for(citi in cities)
+    {
+        println(citi)
+    }
+    
+    for(i in 1..5)
+    {
+        print("$i ")
+    }
+    for(c in 'a'..'h')
+    {
+        print("$c ")
+    }
+    
+}
