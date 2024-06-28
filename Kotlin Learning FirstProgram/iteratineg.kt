@@ -18,6 +18,17 @@ fun main(args: Array<String>) {
 
     var u = 1
     while(u<=10){
+        if(u%5==0)          //break
+        println(u)          // 1  2  3  4  
         u++
+    }
+    println("Out of the loop: $u")
+
+
+    var j = 1
+    do{
+
+    }while{
+        
     }
 }
