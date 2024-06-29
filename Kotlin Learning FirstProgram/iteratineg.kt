@@ -27,8 +27,13 @@ fun main(args: Array<String>) {
 
     var j = 1
     do{
+        println(j)
+        j++
+    }while(j<=5)
 
-    }while{
-        
-    }
+    greeting()
+}
+
+fun greeting(){
+    println("Hello")
 }
