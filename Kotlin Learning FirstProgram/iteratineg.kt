@@ -47,6 +47,14 @@ fun main(args: Array<String>) {
     name = null
     var result = name ?: "Guest"
     println("Hello $result")
+
+    printName("David")
+    printName()
+}
+
+fun printName(name:String?=null){
+    val s = name ?: "Guest"
+    println("Hello, $s")
 }
 
 fun greeting(msg:String,count:Int){
