@@ -36,6 +36,17 @@ fun main(args: Array<String>) {
     //lateinit var a:String // lateint mhr var pl thone
     //a="Hello"
     //println(a)
+
+    var message:String? = "hello"
+    message = null
+    val l = message?.length ?: 0
+    if(l==0) println("Null String")
+    else println("String length: $l")
+
+    var name:String?= "John"
+    name = null
+    var result = name ?: "Guest"
+    println("Hello $result")
 }
 
 fun greeting(msg:String,count:Int){
