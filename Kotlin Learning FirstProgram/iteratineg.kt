@@ -31,9 +31,17 @@ fun main(args: Array<String>) {
         j++
     }while(j<=5)
 
-    greeting()
+    greeting("Hello Kotlin!",3) // function call
+
+    //lateinit var a:String // lateint mhr var pl thone
+    //a="Hello"
+    //println(a)
 }
 
-fun greeting(){
-    println("Hello")
+fun greeting(msg:String,count:Int){
+    for(c in 1..count)
+    println("from main:$msg $c")
+
+    //count++ // function parameter is always val not chage var so count++ is not working
+    println(count)
 }
